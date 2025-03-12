@@ -8,7 +8,7 @@ import OpenAI from "openai";
 dotenv.config();
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY || "-", // Your OpenAI API key here, I used "-" to avoid errors when the key is not set but you should not do that
+  apiKey: process.env.OPENAI_API_KEY // Your OpenAI API key here, I used "-" to avoid errors when the key is not set but you should not do that
 });
 
 const elevenLabsApiKey = process.env.ELEVEN_LABS_API_KEY;
